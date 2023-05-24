@@ -1,0 +1,147 @@
+.headerContainer {
+  padding: 30px;
+  background: rgb(172, 172, 172);
+  background: white;
+
+  a{
+    text-decoration:none;
+  }
+}
+
+ul {
+  margin: 0px !important;
+}
+
+.nav-link {
+  padding: 0.5rem 0.5rem !important;
+}
+
+ul li {
+  display: inline-flex;
+  text-decoration: none;
+  margin-right: 50px;
+  margin-bottom: 0px !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+
+  .activeTitle {
+    color: #ed3237 !important;
+    text-decoration: none !important;
+    padding: 0.5rem 0.5rem !important;
+  }
+
+  .inactiveTitle {
+    color: #303030 !important;
+    text-decoration: none !important;
+    padding: 0.5rem 0.5rem !important;
+  }
+}
+
+// .navBarLinkActive{
+//     color: #9F268D;
+// }
+
+// .navBarLinkActive{
+//     color: #000000;
+// }
+
+.joinUsBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 16px;
+  gap: 10px;
+
+  border: none;
+
+  background: #ff0008;
+
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0px;
+    /* identical to box height, or 0% */
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    text-decoration: none !important;
+    margin-bottom: 0;
+  }
+}
+
+// // added this class
+// .activeLinkItem{
+//     background: rgba(154, 154, 154, 0.15);
+//     cursor: default;
+//     color: black
+// }
+
+.headerLogo img {
+  // width: 147px !important;
+  // min-height: 33px !important;
+  // height: auto;
+  width: 100%;
+  height: auto;
+  max-height: 40px;
+  // padding-left: 50px;
+}
+
+.headerList a {
+  font-family: "Inter";
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .headerLogo img {
+    width: 84px !important;
+    height: 24px !important;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 556px) and (orientation: portrait) {
+  .headerLogo img {
+    width: 84px !important;
+    height: 24px !important;
+    padding-left: 0px;
+  }
+  .navbar-light .navbar-toggler {
+    border-color: white;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape),
+  (orientation: portrait) {
+  ul li {
+    margin-right: 5px !important;
+  }
+}
+
+// here correcting the iphone bugs for the viewport of 664 by 390 on landscape
+@media screen and (min-width: 567px) and (max-width: 768px) and (orientation: landscape),
+  (orientation: portrait) {
+  .joinUsBtn {
+    width: 98px;
+    height: 40px;
+  }
+
+  ul {
+    padding-left: 0px;
+  }
+
+  .headerList a {
+    padding: 0.5rem 0rem;
+    margin: 5px;
+  }
+}
+
+// iphone changes done

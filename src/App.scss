@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-li:hover {
+  background-color: rgba(154, 154, 154, 0.15);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+  display: none !important;
+}
+
+.scroller {
+  scroll-snap-type: y mandatory;
+  // scroll-snap-stop: center;
+  // height: 100vh;
+  overflow-y: scroll;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none !important;
+}
+
+.theLayout::-webkit-scrollbar {
+  display: none;
+}
+section {
+  scroll-snap-align: center;
+  height: 99vh;
+  padding-top: 100px;
+}
+// .desktop-container {
+//   // margin-top: 100px;
+// }
+
+.kkContainer {
+  padding-top: 90px;
+}
+.footer-end {
+  flex-direction: row;
+}
+
+.footer-email {
+  padding-right: 75px;
+}
+
+footer {
+  scroll-snap-stop: always;
+  scroll-snap-align: end;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.slick-prev {
+  z-index: 5 !important;
+  left: 7.2% !important;
+  // background: rgba(255, 221, 221, 0.54) !important;
+
+  :before {
+    font-size: 60px;
+    background: #ED3237;
+
+  }
+}
+
+.slick-next {
+  z-index: 5 !important;
+  right: 11.2% !important;
+  // background: rgba(255, 221, 221, 0.54) !important;
+  :before {
+    font-size: 60px;
+    background: #ED3237;
+
+  }
+}
+
+.slick-dots {
+  bottom: 8% !important;
+}
+
+.slick-dots li {
+  margin: 0 1% !important;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+  // color: #EECBCC !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff !important;
+}
+
+
+
+$accordion-button-focus-border-color: white;
+$accordion-button-focus-box-shadow: none;
+
+.accordion-button:focus {
+  color: none !important;
+  background-color: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
