@@ -90,7 +90,7 @@ const Header = ({handleLinkClick, activeLink}) => {
             className={`row ${styles.headerContainer} justify-content-center align-items-center`}
           >
             <div className={`col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center pe-0 ${styles.headerLogo}`} >
-              <NavLink to={'/'}>
+              <NavLink to={'/kk'}>
               <img src={kkLogo} alt="logo" className="img-fluid" />
               </NavLink>
             </div>
@@ -98,7 +98,7 @@ const Header = ({handleLinkClick, activeLink}) => {
               <ul className={styles.headerList}>
               <li
                      
-                  ><NavLink  to={'/'} className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(1)}>
+                  ><NavLink  to={'/kk'} className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(1)}>
                       Home
                     </NavLink></li>
                     <li 
