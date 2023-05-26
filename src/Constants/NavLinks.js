@@ -8,7 +8,7 @@ export const navLinks = [
 
     {
         title: 'Home',
-        path: "/",
+        path: "/kk",
         exact: true,
         element: <Home />
     },

@@ -98,7 +98,7 @@ const Header = ({handleLinkClick, activeLink}) => {
               <ul className={styles.headerList}>
               <li
                      
-                  ><NavLink  to={'/'} className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(1)}>
+                  ><NavLink  to={'/kk'} className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(1)}>
                       Home
                     </NavLink></li>
                     <li 
