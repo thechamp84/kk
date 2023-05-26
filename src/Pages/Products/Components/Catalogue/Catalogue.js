@@ -12,6 +12,7 @@ import catNine from "../../../../Assets/products/catNine.png";
 import catTen from "../../../../Assets/products/catTen.png";
 import catEleven from "../../../../Assets/products/catEleven.png";
 import catTwelve from "../../../../Assets/products/catTwelve.png";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -77,7 +78,7 @@ const Catalogue = () => {
       <div className="row">
         {catList.map((cat,index) => (
           <div key={index} className={`col-md-3 col-lg-3 ${catStyle.catItem}`}>
-              <img src={cat.image} alt="the catalogue item"/>
+          <NavLink to={'/productDetail'}>  <img src={cat.image} alt="the catalogue item"/></NavLink> 
           </div>
         ))}
       </div>

@@ -35,6 +35,10 @@
   }
 }
 
+.gridContainer{
+  width:80%;
+}
+
 .colContainer {
   display: flex;
   flex-direction: column;
@@ -57,7 +61,7 @@
   }
 
   p {
-    width:70%;
+    width:90%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
