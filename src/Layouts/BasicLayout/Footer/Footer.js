@@ -1,93 +1,52 @@
 import React from "react";
 import footer from "./Footer.module.scss";
 import kkLogo from "../../../Assets/header/kkLogo.svg";
+import { NavLink } from "react-router-dom";
+import instagram from "../../../Assets/footer/instagram.png";
+import whatsapp from "../../../Assets/footer/whatsapp.png";
+import linkedin from "../../../Assets/footer/linkedin.png";
 
-const Footer = () => {
+const Footer = ({handleLinkClick, activeLink}) => {
   return (
     <>
       <footer className={`container-fluid ${footer.footerContainer}`}>
         <div className="row">
           {/* first col */}
-          <div className={`col ${footer.footColOne}`}>
+          <div className={`col-md-2 col-lg-2 ${footer.footColOne}`}>
             <img src={kkLogo} alt="brand logo" />
-            <p>
-              Differentiated sustainable, and compliant packaging solutions for
-              industry. Made in theIndia.
-            </p>
           </div>
 
           {/* second col */}
-          <div className={`col ${footer.footColTwo}`}>
+          <div className={`col-md-8 col-lg-8 ${footer.footColTwo}`}>
             <ul>
+        
               <li>
-                <a href="#" className={footer.firstFootLink}>
-                  Menu
-                </a>
+                <NavLink to={"/"} onClick={() => handleLinkClick(1)}>Home</NavLink>
               </li>
               <li>
-                <a href="#">HOME</a>
+                <NavLink to={"/aboutUs"} onClick={() => handleLinkClick(2)}>About Us</NavLink>
               </li>
               <li>
-                <a href="#">ABOUT US</a>
+                <NavLink to={"/products"} onClick={() => handleLinkClick(3)}>Products</NavLink>
               </li>
               <li>
-                <a href="#">PRODUCTS</a>
-              </li>
-              <li>
-                <a href="#">Request A Qoute</a>
+                <NavLink to={"/contactUs"} onClick={() => handleLinkClick(4)}>Request A Qoute</NavLink>
               </li>
             </ul>
           </div>
 
           {/* third col */}
-          <div className={`col ${footer.footColThree}`}>
-            <ul>
-              <li>
-                <a href="#" className={footer.firstFootLink}>
-                  Follow Us
-                </a>
-              </li>
-              <li>
-                <a href="#">Facebook</a>
-              </li>
-              <li>
-                <a href="#">Instagram</a>
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-              <li>
-                <a href="#">Linkedin</a>
-              </li>
-              <li>
-                <a href="#">Youtube</a>
-              </li>
-            </ul>
-          </div>
-
-          {/* fourth col */}
-          <div className={`col ${footer.footColFour}`}>
-            <p className={footer.footerTitle}>Contact Us</p>
-            <p className={footer.footerAddress}>
-              Packaging <br />
-              Wheat Ridge, CO 80212
-            </p>
-
-            <p className={footer.footerMail}>info@packaging.com</p>
-            <p claassName={footer.footerTelephone}>(303) 729-0644</p>
-          </div>
-
-          {/* fifth col */}
-          <div className={`col ${footer.footColFifth}`}>
-            <p>Join our mailing list</p>
-
-            <form>
-              <input type="email" placeholder="Email Address" />
-
-              <button type="submit"><p>Submit</p></button>
-            </form>
+          <div className={`col-md-2 col-lg-2 ${footer.footColThree}`}>
+            <p>Follow Me On</p>
+            <div className={footer.iconGroup}>
+              <img src={instagram} alt="instagram logo"/>
+              <img src={whatsapp} alt="whatsapp logo"/>
+              <img src={linkedin} alt="linkedin logo"/>
+            </div>
           </div>
         </div>
+
+        <p className={footer.copyright}>© Packaging Inc. — Web Design by RK</p>
       </footer>
     </>
   );

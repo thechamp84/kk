@@ -1,54 +1,23 @@
 .footerContainer {
   background: #fff7f7;
-  padding:7%;
+  padding: 7%;
 }
 
 .footColOne {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  p {
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-
-    // display: flex;
-    // align-items: center;
-    // justify-content: start;
-    text-align: start;
-
-    color: #1d1f2e;
-  }
-
-  img{
-    margin-bottom:10%;
-  }
+  justify-content: start;
+  align-items: center;
 }
 
 .footColTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   ul {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-left: 35%;
-  }
-
-  .firstFootLink {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    display: flex;
+    justify-content: center;
     align-items: center;
-
-    color: #3d4246;
-    margin-bottom: 25%;
   }
 
   a {
@@ -56,182 +25,44 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 22px;
-    /* or 157% */
 
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    text-transform: capitalize;
-    text-align: left;
-
-    color: rgba(29, 31, 46, 0.7);
+    color: #000000;
   }
 }
 
 .footColThree {
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-left: 35%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  .firstFootLink {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    display: flex;
-    align-items: center;
-
-    color: #3d4246;
-    margin-bottom: 10%;
-  }
-
-  a {
-    text-decoration: none;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    /* or 157% */
-
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    text-transform: capitalize;
-
-    color: rgba(29, 31, 46, 0.7);
-    text-align: start;
-  }
-}
-
-.footColFour {
-  text-align: start;
-  padding-left: 5%;
-  .footerTitle {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    display: flex;
-    align-items: center;
-
-    color: #3d4246;
-    margin-bottom: 3%;
-  }
-
-  .footerAddress {
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-
-    display: flex;
-    align-items: center;
-
-    color: #1d1f2e;
-  }
-
-  .footerMail {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    display: flex;
-    align-items: center;
-
-    color: #3d4246;
-  }
-
-  .footerTelephone {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    display: flex;
-    align-items: center;
-
-    color: #3d4246;
-  }
-}
-
-.footColFifth {
-  text-align: start;
   p {
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    /* or 120% */
+    font-size: 18px;
+    line-height: 22px;
 
-    display: flex;
-    align-items: center;
+    text-align: center;
 
     color: #000000;
   }
 
-  input {
-    background: #ffffff;
-    border: 1px solid #7796a8;
-    border-radius: 2px 0px 0px 2px;
-    margin-bottom: 8%;
-  }
-
-  input::placeholder {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+  .iconGroup {
+    width: 62%;
     display: flex;
-    align-items: center;
-
-    color: #000000;
+    justify-content: space-between;
   }
+}
 
-  button {
-    background: #ed3237;
-    box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
-    border:none;
-    border-radius: 0px 2px 2px 0px;
-    padding:5%;
-
-    p {
-      margin-bottom: 0;
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 18px;
-      /* identical to box height, or 150% */
-
-      display: flex;
-      align-items: center;
-      text-align: center;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-
-      color: #ffffff;
-     
-    }
-  }
+.copyright {
+  margin-top: 6%;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #868686;
 }

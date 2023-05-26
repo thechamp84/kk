@@ -3,13 +3,13 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 // import Scrollbar from 'smooth-scrollbar'
 
-const BasicLayout = ({ children }) => {
+const BasicLayout = ({ children, handleLinkClick, activeLink }) => {
  return (
     <div className=" scroller">
       
-        <Header />
+        <Header  handleLinkClick={handleLinkClick} activeLink= {activeLink}/>
         <div>{children}</div>
-        <Footer />
+        <Footer  handleLinkClick={handleLinkClick} activeLink= {activeLink}/>
       
     </div>
   );

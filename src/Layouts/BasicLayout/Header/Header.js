@@ -3,16 +3,16 @@ import styles from "./Header.module.scss";
 import kkLogo from "../../../Assets/header/kkLogo.svg";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({handleLinkClick, activeLink}) => {
   // for list icon clicks
 
   // for mobile screen check
   const [isMobile, setIsMobile] = useState(false);
-  const [activeLink, setActiveLink] = useState(1);
+  // const [activeLink, setActiveLink] = useState(1);
 
-  const handleLinkClick = (index) => {
-    setActiveLink(index);
-  }
+  // const handleLinkClick = (index) => {
+  //   setActiveLink(index);
+  // }
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 576px)");
@@ -97,18 +97,18 @@ const Header = () => {
             <div className=" col-sm-8 col-md-8 d-flex justify-content-start">
               <ul className={styles.headerList}>
               <li
-                      // className={'nav-li'}
+                     
                   ><NavLink  to={'/'} className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(1)}>
                       Home
                     </NavLink></li>
                     <li 
-                    //  className={'nav-li'}
+                    
                    
-                  ><NavLink  to={'/'}  className={activeLink === 2 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(2)} >
+                  ><NavLink  to={'/aboutUs'}  className={activeLink === 2 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(2)} >
                       About Us
                     </NavLink></li>
                     <li 
-                    //  className={'nav-li'}
+                  
                     
                   ><NavLink to={'/products'} className={activeLink === 3 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(3)}  >
                      Products

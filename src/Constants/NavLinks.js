@@ -1,3 +1,4 @@
+import Aboutus from "../Pages/About-Us/Aboutus";
 import ContactUs from "../Pages/Contact-Us/ContactUs";
 import Home from "../Pages/Home/Home";
 import Products from "../Pages/Products/Products";
@@ -14,7 +15,7 @@ export const navLinks = [
         title: 'About Us',
         path: "/aboutUs",
         exact: true,
-        element: <Home />
+        element:<Aboutus/>
     },
    {
         title: 'Products',
