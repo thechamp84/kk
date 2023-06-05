@@ -10,7 +10,7 @@ const Home = ({handleLinkClick}) => {
         <meta charSet="utf-8" />
         <meta name="shreyas" content="Place the meta description text here." />
         <title>KK</title>
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="/kk" />
       </Helmet>
       <div>
         <Intro />
