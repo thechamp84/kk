@@ -24,7 +24,7 @@ function App() {
       <BasicLayout className="theLayout"  handleLinkClick={handleLinkClick} activeLink= {activeLink}>
         <Routes>
 
-        <Route path="/" exact element={<Home handleLinkClick={handleLinkClick}/>} />
+        <Route path="/kk" exact element={<Home handleLinkClick={handleLinkClick}/>} />
           <Route path="/aboutUs" exact element={<Aboutus/>} />
           <Route path='/products' exact element={<Products handleLinkClick={handleLinkClick}/>} />
           <Route path='/contactUs' exact element={<ContactUs/>} />
