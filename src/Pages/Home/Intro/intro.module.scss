@@ -1,13 +1,11 @@
+@import "../../../mixins.module.scss";
+
 .introContainer {
   background: url("../../../Assets/home/introPic.png");
-  background-size:cover;
-  background-position: center;
- 
+
+  @include bg-center;
+  @include y-center;
   height: 89vh;
-  display:flex !important;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
 
   h1 {
     font-family: "Inter";
@@ -15,15 +13,8 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 66px;
-    /* or 138% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 2px;
-
     color: #ffffff;
-
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 0.7%;
   }
@@ -34,14 +25,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
-    /* or 136% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: #ffffff;
-
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 2.3%;
   }
@@ -51,11 +35,7 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 15px 21.3px 15px 21px;
-    border:none;
-
-    // width: 164.3px;
-    // height: 48px;
-
+    border: none;
     background: #ffffff;
 
     p {
@@ -64,25 +44,10 @@
       font-weight: 700;
       font-size: 12px;
       line-height: 18px;
-      /* identical to box height, or 150% */
-
-      display: flex;
-      align-items: center;
-      text-align: center;
       letter-spacing: 3px;
       text-transform: uppercase;
-
       color: #000000;
-      margin-bottom:0;
+      margin-bottom: 0;
     }
   }
-
-
-
- 
-  
 }
-
-
-
-

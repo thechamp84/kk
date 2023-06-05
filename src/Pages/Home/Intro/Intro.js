@@ -13,9 +13,9 @@ const Intro = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     accessiibility: true,
-    autoplay: false,
-    // autoplaySpeed: 5000,
-    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows:false,
     pauseOnHover: true,
     draggable: true,
     // padding: 0,
@@ -68,18 +68,18 @@ const Intro = () => {
       <div className={introStyle.introContainer}>
         <h1>Sustainable Solutions</h1>
         <p>High-quality, compliant, and sustainable cannabis packaging</p>
-        <button>
+        {/* <button>
           <p>OUR PRODUCTS</p>
-        </button>
+        </button> */}
       </div>
 
       {/* second slide */}
       <div className={introStyle.introContainer}>
         <h1>Sustainable Solutions</h1>
         <p>High-quality, compliant, and sustainable cannabis packaging</p>
-        <button>
+        {/* <button>
           <p>OUR PRODUCTS</p>
-        </button>
+        </button> */}
       </div>
 
 
@@ -88,9 +88,9 @@ const Intro = () => {
       <div className={introStyle.introContainer}>
         <h1>Sustainable Solutions</h1>
         <p>High-quality, compliant, and sustainable cannabis packaging</p>
-        <button>
+        {/* <button>
           <p>OUR PRODUCTS</p>
-        </button>
+        </button> */}
       </div>
 
     </Slider>

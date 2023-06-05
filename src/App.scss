@@ -3,8 +3,6 @@
   box-sizing: border-box;
 }
 
-
-
 .nav-link {
   color: #000000;
 }
@@ -61,27 +59,26 @@ footer {
   width: 100%;
 }
 
+// slider arrow styling
+
 .slick-prev {
   z-index: 5 !important;
   left: 7.2% !important;
-  // background: rgba(255, 221, 221, 0.54) !important;
+}
 
-  :before {
-    font-size: 60px;
-    background: #ED3237;
-
-  }
+.slick-prev:before {
+  font-size: 60px;
+  background: #ed3237;
 }
 
 .slick-next {
   z-index: 5 !important;
   right: 11.2% !important;
-  // background: rgba(255, 221, 221, 0.54) !important;
-  :before {
-    font-size: 60px;
-    background: #ED3237;
+}
 
-  }
+.slick-next:before {
+  font-size: 60px;
+  background: #ed3237;
 }
 
 .slick-dots {
@@ -101,25 +98,23 @@ footer {
   color: #ffffff !important;
 }
 
+// $accordion-button-focus-border-color: white;
+// $accordion-button-focus-box-shadow: none;
 
+// .accordion-button:focus {
+//   color: none !important;
+//   background-color: none !important;
+//   box-shadow: none !important;
+//   outline: none !important;
+//   box-shadow: none;
+// }
 
-$accordion-button-focus-border-color: white;
-$accordion-button-focus-box-shadow: none;
+// .accordion-button:not(.collapsed) {
+//   color: black;
+//   background-color: #ffffff;
+//   box-shadow: none;
+// }
 
-.accordion-button:focus {
-  color: none !important;
-  background-color: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-  color: black;
-  background-color: #ffffff;
-  box-shadow: none;
-}
-
-.accordion-button:after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-}
+// .accordion-button:after {
+//   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+// }

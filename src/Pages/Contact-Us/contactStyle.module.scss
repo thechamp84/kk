@@ -1,3 +1,5 @@
+@import "../../mixins.module.scss";
+
 .contactContainer {
   position: relative;
   height: 100vh;
@@ -13,11 +15,6 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 66px;
-    /* or 138% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 2px;
     margin-bottom: 4%;
   }
@@ -28,14 +25,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    /* or 127% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: #000000;
-
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 3%;
   }
@@ -45,11 +35,8 @@
   position: absolute;
   width: 58%;
   top: 25%;
-    left: 21.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  left: 21.5%;
+  @include y-center;
 
   // the form styling begins
 
@@ -79,13 +66,8 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 125%;
-      /* identical to box height, or 20px */
-
       display: flex;
       align-items: center;
-
-      /* Atar/Grey/600 */
-
       color: #969798;
     }
   }
@@ -102,13 +84,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      /* identical to box height, or 112% */
-
-      display: flex;
-      align-items: center;
-      text-align: center;
       text-transform: uppercase;
-
       color: #ffffff;
     }
   }
@@ -120,7 +96,6 @@
     width: 100%;
     height: 100px;
     border: 1px solid #e3e3e3;
-
   }
 
   textarea::placeholder {
@@ -135,7 +110,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #4f5154;
-    margin-bottom:1%;
+    margin-bottom: 1%;
     margin-top: 1.5%;
   }
 }

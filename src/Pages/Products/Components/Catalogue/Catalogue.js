@@ -56,7 +56,7 @@ const Catalogue = () => {
 
   return (
     <div className={catStyle.catContainer}>
-    <div className={catStyle.listBox}>
+    {/* <div className={catStyle.listBox}>
       <ul className={catStyle.titleList}>
         {catTabs.map((tab, index) => (
           <li
@@ -70,7 +70,7 @@ const Catalogue = () => {
           </li>
         ))}
       </ul>
-      </div>
+      </div> */}
       
       
 

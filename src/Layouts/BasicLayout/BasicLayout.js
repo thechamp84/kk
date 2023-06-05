@@ -6,6 +6,7 @@ import Footer from "./Footer/Footer";
 const BasicLayout = ({ children, handleLinkClick, activeLink }) => {
  return (
     <div className=" scroller">
+ 
       
         <Header  handleLinkClick={handleLinkClick} activeLink= {activeLink}/>
         <div>{children}</div>

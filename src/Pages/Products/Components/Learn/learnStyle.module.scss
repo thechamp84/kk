@@ -1,16 +1,14 @@
+@import "../../../../mixins.module.scss";
+
 .learnLeft {
   background: url("../../../../Assets/products/learnPic.png");
-  background-size: cover;
-  background-position: center;
+  @include bg-center;
   height: 68vh;
 }
 
 .learnRight {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  background: #FFF6F6;
+  @include y-start;
+  background: #fff6f6;
   padding-left: 4.5%;
 
   h1 {
@@ -19,11 +17,8 @@
     font-weight: 500;
     font-size: 29px;
     line-height: 40px;
-    /* identical to box height, or 138% */
-
     display: flex;
     align-items: center;
-
     color: #000000;
   }
 
@@ -35,20 +30,17 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
-
     display: flex;
     align-items: center;
     text-align: justify;
-
     color: #000000;
   }
 
   button {
     background: #ed3237;
     box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
-    border:none;
-    padding:2%;
+    border: none;
+    padding: 2%;
     white-space: nowrap;
 
     p {
@@ -58,13 +50,10 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      /* identical to box height, or 112% */
-
       display: flex;
       align-items: center;
       text-align: center;
       text-transform: uppercase;
-
       color: #ffffff;
     }
   }

@@ -1,6 +1,8 @@
 import React from "react";
 import tropical from "./tropical.module.scss";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.scss";
 import prodetailLeft from "../../../Assets/ProDetail/prodetailLeft.png";
 import slidePicOne from "../../../Assets/ProDetail/slidePicOne.png";
 import slidePicTwo from "../../../Assets/ProDetail/slidePicTwo.png";

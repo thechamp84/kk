@@ -1,10 +1,9 @@
+@import "../../../mixins.module.scss";
+
 .packContainer {
-    height:70vh;
+  @include y-center;
+  height: 70vh;
   background: #fefbfb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
 
   h1 {
@@ -13,15 +12,8 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
-    /* identical to box height, or 133% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 1px;
-
     color: #1d1f2e;
-
     text-shadow: 0px 0px 1px rgba(9, 3, 3, 0.53);
     margin-bottom: 2%;
   }
@@ -32,12 +24,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    /* or 133% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: rgba(29, 31, 46, 0.7);
     width: 62%;
     margin-bottom: 1.5%;
@@ -49,12 +35,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: #ff3b00;
   }
 }

@@ -5,8 +5,9 @@ import "slick-carousel/slick/slick-theme.scss";
 import itemStyle from "./itemStyle.module.scss";
 import productOne from "../../../Assets/home/productOne.png";
 import productTwo from "../../../Assets/home/productTwo.png";
+import { NavLink } from "react-router-dom";
 
-const Items = () => {
+const Items = ({handleLinkClick}) => {
   // for the slider
   const itemSettings = {
     dots: false,
@@ -95,7 +96,7 @@ const Items = () => {
       </Slider>
 
      <div className={itemStyle.viewAll}>
-      <a href="#"> view all </a>
+      <NavLink to={'/products'} onClick={() => handleLinkClick(3)}> view all </NavLink>
       </div>
     </div>
   );

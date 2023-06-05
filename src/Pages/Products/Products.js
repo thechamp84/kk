@@ -4,11 +4,11 @@ import Productintro from './Components/Productintro/Productintro';
 import Catalogue from './Components/Catalogue/Catalogue';
 import Learn from './Components/Learn/Learn';
 
-const Products = () => {
+const Products = ({handleLinkClick}) => {
   return (
     <div>
     <Productintro/>
-    <Catalogue/>
+    <Catalogue />
     <Learn/>
    
     </div>

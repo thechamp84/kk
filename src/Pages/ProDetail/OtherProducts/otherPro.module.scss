@@ -1,57 +1,47 @@
+@import "../../../mixins.module.scss";
+
 .otherProContainer {
   height: 100vh;
-  padding-inline:7%;
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content: center;
+  padding-inline: 7%;
+  @include y-center;
 }
 
-.textContainer{
-    margin-bottom:4%;
+.textContainer {
+  margin-bottom: 4%;
 }
 
 .textLeft {
-    display:flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   h1 {
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 50px;
-    /* or 167% */
-
     letter-spacing: 0.03em;
     text-transform: capitalize;
-
     color: #000000;
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 }
 
 .textRight {
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  @include x-end;
   a {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
-
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #ff3b00;
     cursor: pointer;
   }
 }
 
-.productImage{
-    display:flex;
-    justify-content: center;
+.productImage {
+  @include x-center;
 }

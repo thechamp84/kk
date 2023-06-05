@@ -3,7 +3,7 @@ import Intro from "./Intro/Intro";
 import Packaging from "./Packaging/Packaging";
 import Items from "./Items/Items";
 
-const Home = () => {
+const Home = ({handleLinkClick}) => {
   return (
     <>
       <Helmet>
@@ -14,8 +14,8 @@ const Home = () => {
       </Helmet>
       <div>
         <Intro />
-        <Packaging />
-        <Items />
+        <Packaging handleLinkClick={handleLinkClick} />
+        <Items handleLinkClick={handleLinkClick}  />
       </div>
     </>
   );

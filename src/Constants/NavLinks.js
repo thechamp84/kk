@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Aboutus from "../Pages/About-Us/Aboutus";
 import ContactUs from "../Pages/Contact-Us/ContactUs";
 import Home from "../Pages/Home/Home";
 import Prodetail from "../Pages/ProDetail/Prodetail";
 import Products from "../Pages/Products/Products";
+
+
 
 export const navLinks = [
 
@@ -10,7 +13,7 @@ export const navLinks = [
         title: 'Home',
         path: "/kk",
         exact: true,
-        element: <Home />
+        element: <Home/>
     },
     {
         title: 'About Us',

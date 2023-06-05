@@ -1,23 +1,19 @@
+@import "../../../mixins.module.scss";
+
 .footerContainer {
   background: #fff7f7;
   padding: 2% 7%;
 }
 
 .footColOne {
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  @include x-start;
 }
 
 .footColTwo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include x-center;
 
   ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include x-center;
   }
 
   a {
@@ -33,9 +29,7 @@
 }
 
 .footColThree {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include y-center;
 
   p {
     font-family: "Inter";
@@ -51,8 +45,7 @@
 
   .iconGroup {
     width: 62%;
-    display: flex;
-    justify-content: space-between;
+    @include x-sb;
   }
 }
 

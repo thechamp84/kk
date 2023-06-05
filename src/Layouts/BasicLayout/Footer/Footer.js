@@ -6,7 +6,7 @@ import instagram from "../../../Assets/footer/instagram.png";
 import whatsapp from "../../../Assets/footer/whatsapp.png";
 import linkedin from "../../../Assets/footer/linkedin.png";
 
-const Footer = ({handleLinkClick, activeLink}) => {
+const Footer = ({handleLinkClick}) => {
   return (
     <>
       <footer className={`container-fluid ${footer.footerContainer}`}>
@@ -21,16 +21,16 @@ const Footer = ({handleLinkClick, activeLink}) => {
             <ul>
         
               <li>
-                <NavLink to={"/"} onClick={() => handleLinkClick(1)}>Home</NavLink>
+                <NavLink to="/" onClick={() => handleLinkClick(1)}>Home</NavLink>
               </li>
               <li>
                 <NavLink to={"/aboutUs"} onClick={() => handleLinkClick(2)}>About Us</NavLink>
               </li>
               <li>
-                <NavLink to={"/products"} onClick={() => handleLinkClick(3)}>Products</NavLink>
+                <NavLink to="/products" onClick={() => handleLinkClick(3)}>Products</NavLink>
               </li>
               <li>
-                <NavLink to={"/contactUs"} onClick={() => handleLinkClick(4)}>Request A Qoute</NavLink>
+                <NavLink to="/contactUs" onClick={() => handleLinkClick(4)}>Request A Qoute</NavLink>
               </li>
             </ul>
           </div>
