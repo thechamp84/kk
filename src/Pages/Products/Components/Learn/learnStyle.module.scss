@@ -58,3 +58,47 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+
+
+  .learnLeft {
+    height: 50vh;
+  }
+
+  .learnRight {
+    padding-bottom: 10%;
+    h1 {
+      padding-top: 5%;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 40px;
+      /* or 250% */
+
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      width: 100%;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 20px;
+      /* or 167% */
+
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      padding-bottom: 1%;
+    }
+
+    button {
+      padding:3%;
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}

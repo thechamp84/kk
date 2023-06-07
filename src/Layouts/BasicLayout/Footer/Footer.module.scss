@@ -12,7 +12,14 @@
 .footColTwo {
   @include x-center;
 
-  ul {
+  // ul {
+  //   @include x-center;
+  // }
+  .footListRow{
+    width:90%;
+  }
+
+  .listCol{
     @include x-center;
   }
 
@@ -58,4 +65,34 @@
   font-size: 14px;
   line-height: 21px;
   color: #868686;
+}
+
+
+// for mobile portraits
+@media (max-width:576px){
+  .footerContainer{
+    padding: 6% 7% 10% 7%;
+  }
+  .footColOne{
+    @include x-center;
+    margin-bottom: 6%;
+  
+  }
+  .footColTwo{
+    .footListRow{
+      width:100%;
+      margin-bottom:6%;
+    }
+
+  .listCol{
+    margin-bottom:4%;
+  }
+
+  }
+
+  .footColThree{
+    .iconGroup{
+      width:48%;
+    }
+  }
 }

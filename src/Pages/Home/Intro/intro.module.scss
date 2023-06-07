@@ -30,24 +30,48 @@
     margin-bottom: 2.3%;
   }
 
-  button {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 15px 21.3px 15px 21px;
-    border: none;
-    background: #ffffff;
+  // button {
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: flex-start;
+  //   padding: 15px 21.3px 15px 21px;
+  //   border: none;
+  //   background: #ffffff;
+
+  //   p {
+  //     font-family: "Karla";
+  //     font-style: normal;
+  //     font-weight: 700;
+  //     font-size: 12px;
+  //     line-height: 18px;
+  //     letter-spacing: 3px;
+  //     text-transform: uppercase;
+  //     color: #000000;
+  //     margin-bottom: 0;
+  //   }
+  // }
+}
+
+@media (max-width: 576px) {
+  .introContainer {
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 66px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 1px;
+    }
 
     p {
-      font-family: "Karla";
-      font-style: normal;
-      font-weight: 700;
+      width: 60%;
+      font-weight: 400;
       font-size: 12px;
-      line-height: 18px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #000000;
-      margin-bottom: 0;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      text-align: center;
     }
   }
 }

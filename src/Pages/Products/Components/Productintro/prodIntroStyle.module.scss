@@ -41,3 +41,31 @@
     bottom: 0;
   }
 }
+
+// mobile style
+
+@media (max-width: 576px) {
+  .prodIntroContainer {
+    height: 100vh;
+
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 66px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    p {
+      width:88%;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

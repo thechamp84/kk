@@ -77,7 +77,7 @@ const Catalogue = () => {
 
       <div className="row">
         {catList.map((cat,index) => (
-          <div key={index} className={`col-md-3 col-lg-3 ${catStyle.catItem}`}>
+          <div key={index} className={`col-6 col-sm-6 col-md-3 col-lg-3 ${catStyle.catItem}`}>
           <NavLink to={'/productDetail'}>  <img src={cat.image} alt="the catalogue item"/></NavLink> 
           </div>
         ))}

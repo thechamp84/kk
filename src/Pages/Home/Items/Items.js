@@ -7,7 +7,7 @@ import productOne from "../../../Assets/home/productOne.png";
 import productTwo from "../../../Assets/home/productTwo.png";
 import { NavLink } from "react-router-dom";
 
-const Items = ({handleLinkClick}) => {
+const Items = ({ handleLinkClick }) => {
   // for the slider
   const itemSettings = {
     dots: false,
@@ -18,7 +18,7 @@ const Items = ({handleLinkClick}) => {
     // accessibility: true,
     className: "center",
     centerMode: true,
-    centerPadding: "110px",
+    centerPadding: "150px",
     autoplay: false,
     arrows: true,
     pauseOnHover: true,
@@ -58,45 +58,34 @@ const Items = ({handleLinkClick}) => {
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 3,
+          centerPadding: "40px",
+          arrows: false,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
     ],
-
-   
   };
 
   return (
     <div className={`container-fluid ${itemStyle.itemsContainer}`}>
       <h1>Our Products </h1>
 
-      <Slider {...itemSettings}>
-        <div className={itemStyle.firstDiv}>
-          <img src={productOne} alt="the item pics" />
-        </div>
-        <div className={itemStyle.secondDiv}>
-          <img src={productTwo} alt="the item pics" />
-        </div>
-        <div className={itemStyle.thirdDiv}>
-          <img src={productOne} alt="the item pics" />
-        </div>
-
-        <div className={itemStyle.firstDiv}>
-          <img src={productTwo} alt="the item pics" />
-        </div>
-        <div className={itemStyle.secondDiv}>
-          <img src={productOne} alt="the item pics" />
-        </div>
-        <div className={itemStyle.thirdDiv}>
-          <img src={productTwo} alt="the item pics" />
-        </div>
-
-
+      <Slider {...itemSettings} className={itemStyle.itemSlide}>
+       
+        <div className={itemStyle.slideDivOne}></div>
+        <div className={itemStyle.slideDivTwo}></div>
+        <div className={itemStyle.slideDivThree}></div>
+        <div className={itemStyle.slideDivFour}></div>
+        <div className={itemStyle.slideDivFive}></div>
+        <div className={itemStyle.slideDivSix}></div>
       </Slider>
 
-     <div className={itemStyle.viewAll}>
-      <NavLink to={'/products'} onClick={() => handleLinkClick(3)}> view all </NavLink>
+      <div className={itemStyle.viewAll}>
+        <NavLink to={"/products"} onClick={() => handleLinkClick(3)}>
+          {" "}
+          view all{" "}
+        </NavLink>
       </div>
     </div>
   );

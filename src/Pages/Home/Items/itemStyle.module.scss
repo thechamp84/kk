@@ -34,3 +34,41 @@
     color: #ff3b00;
   }
 }
+
+.slideDivOne {
+  height: 300px;
+  background: url("../../../Assets/products/catOne.png");
+  @include bg-center;
+}
+
+.slideDivTwo {
+  height: 300px;
+  background: url("../../../Assets/products/catTwo.png");
+  @include bg-center;
+}
+.slideDivThree {
+  height: 300px;
+  background: url("../../../Assets/products/catThree.png");
+  @include bg-center;
+}
+.slideDivFour {
+  height: 300px;
+  background: url("../../../Assets/products/catFour.png");
+  @include bg-center;
+}
+.slideDivFive {
+  height: 300px;
+  background: url("../../../Assets/products/catFive.png");
+  @include bg-center;
+}
+.slideDivSix {
+  height: 300px;
+  background: url("../../../Assets/products/catSix.png");
+  @include bg-center;
+}
+
+@media (max-width: 576px) {
+  .itemsContainer {
+    padding-top: 20%;
+  }
+}

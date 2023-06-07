@@ -11,7 +11,7 @@ export const navLinks = [
 
     {
         title: 'Home',
-        path: "/kk",
+        path: "/",
         exact: true,
         element: <Home/>
     },

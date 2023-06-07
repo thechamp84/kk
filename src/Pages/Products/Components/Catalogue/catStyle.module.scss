@@ -47,3 +47,13 @@
   @include x-center;
   cursor: pointer;
 }
+
+
+@media (max-width:576px){
+  .catItem{
+   margin:2% 0;
+    img{
+      width:100%;
+    }
+  }
+}
