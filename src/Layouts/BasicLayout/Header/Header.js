@@ -63,7 +63,7 @@ const Header = ({handleLinkClick, activeLink}) => {
         } navbar-collapse`} id="navbarTogglerDemo01">
               <ul className="navbar-nav ms-auto">
                 <li className="navbar-item">
-                  <NavLink  to={'/'} className="nav-link" onClick={handleNavCollapse}>
+                  <NavLink  to={'/kk'} className="nav-link" onClick={handleNavCollapse}>
                     Home
                   </NavLink>
                 </li>
@@ -98,7 +98,7 @@ const Header = ({handleLinkClick, activeLink}) => {
             className={`row ${styles.headerContainer} justify-content-center align-items-center`}
           >
             <div className={`col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center pe-0 ${styles.headerLogo}`} >
-              <NavLink to={'/'} onClick={() => handleLinkClick(1)}>
+              <NavLink to={'/kk'} onClick={() => handleLinkClick(1)}>
               <img src={kkLogo} alt="logo" className="img-fluid" />
               </NavLink>
             </div>
@@ -106,7 +106,7 @@ const Header = ({handleLinkClick, activeLink}) => {
               <ul className={styles.headerList}>
               <li
                      
-                  ><NavLink  to={'/'} className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(1)}>
+                  ><NavLink  to={'/kk'} className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(1)}>
                       Home
                     </NavLink></li>
                     <li 
