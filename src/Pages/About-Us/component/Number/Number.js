@@ -22,7 +22,7 @@ const Number = () => {
         <div className="row">
             {
                 numberList.map((data) => (
-                    <div className={`col-md-3 col-lg-3 ${number.colContainer}`}>
+                    <div className={` col-md-3 col-lg-3 ${number.colContainer}`}>
                         <img src={data.image} alt="the badge"/>
                         <h1>{data.heading}</h1>
                         <p>{data.para}</p>

@@ -61,3 +61,30 @@
     color: #656565;
   }
 }
+
+//mobile styling
+
+@media (max-width: 576px) {
+  .numberContainer {
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+
+    p {
+      width: 90%;
+      margin-top: 0;
+      margin-bottom: 6%;
+    }
+  }
+
+  .gridContainer {
+    width: 100%;
+  }
+
+  .colContainer {
+    h1 {
+      font-size: 26px;
+      line-height: 43px;
+    }
+  }
+}

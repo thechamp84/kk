@@ -6,7 +6,9 @@ const ContactUs = () => {
   return (
     <div className={contactStyle.contactContainer}>
   
+     <div className={contactStyle.bgContainer}>
     <img src={whiteLayer} alt="the white layer"/>
+    </div>
       <div className={`container-fluid ${contactStyle.formContainer}`}>
         <h1>Contact US</h1>
         <p>Please fill out the form below. Someone from our team will contact you soon!</p>

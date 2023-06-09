@@ -39,3 +39,32 @@
 .logoContainer {
  @include x-center;
 }
+
+
+
+// mobile styling
+
+@media (max-width:576px){
+  .comapanyContainer{
+     height:auto;
+     padding-top: 6%;
+     padding-bottom: 8%;
+    h1{
+      font-size: 27px;
+      line-height: 35px;
+    }
+
+    p{
+      margin-top:0;
+      font-size: 15px;
+      line-height: 27px;
+      width:80%;
+    }
+  }
+
+  .logoContainer{
+    margin-bottom:10%;
+  }
+
+
+}

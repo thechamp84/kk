@@ -23,7 +23,7 @@ const Companies = () => {
     <div className={`row ${companies.logoRow}`}>
         {
             logoList.map((logo) => (
-                <div className={`col-2 ${companies.logoContainer}`}>
+                <div className={`col-12 col-sm-2 col-md-2 col-lg-2 ${companies.logoContainer}`}>
                     <img src={logo.image} alt="brand logo"/>
                 </div>
             ))

@@ -3,10 +3,17 @@
 .contactContainer {
   position: relative;
   height: 100vh;
-  background: url("../../Assets/contactUs/contactPic.png");
-  background-size: 100% 60%;
-  background-position: center top;
-  background-repeat: no-repeat;
+
+  .bgContainer{
+    background: url("../../Assets/contactUs/contactPic.png");
+    background-size: 100% 60%;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  // background: url("../../Assets/contactUs/contactPic.png");
+  // background-size: 100% 60%;
+  // background-position: center top;
+  // background-repeat: no-repeat;
   display: flex;
 
   h1 {
@@ -113,4 +120,53 @@
     margin-bottom: 1%;
     margin-top: 1.5%;
   }
+}
+
+
+// mobile styling
+@media (max-width:576px){
+  .contactContainer{
+
+    .bgContainer{
+      width:100%;
+      background-size: 100% 54%;
+      position:relative;
+      
+      img{
+
+        position:absolute;
+        bottom:0;
+        width:100%;
+      }
+    }
+
+    h1{
+      font-size: 40px;
+    line-height: 50px;
+    }
+
+    p{
+      font-size: 19px;
+    line-height: 26px;
+    text-align: center;
+    }
+  }
+
+.formContainer{
+  width: 80%;
+  top: 14%;
+  left: 10.5%;
+
+   .inputColumns{
+    margin-bottom:8%;
+   }
+}
+
+.textField{
+  p{
+    text-align: left;
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+}
 }
