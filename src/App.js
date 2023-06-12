@@ -2,7 +2,7 @@ import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import { navLinks } from './Constants/NavLinks';
 import BasicLayout from "./Layouts/BasicLayout/BasicLayout";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Home from "./Pages/Home/Home";
 import Aboutus from "./Pages/About-Us/Aboutus";
 import Products from "./Pages/Products/Products";
@@ -12,8 +12,12 @@ import Prodetail from "./Pages/ProDetail/Prodetail";
 
 
 function App() {
+  const storedActiveLink = localStorage.getItem('activeLink');
+  const [activeLink, setActiveLink] = useState(storedActiveLink ? parseInt(storedActiveLink) :1);
 
-  const [activeLink, setActiveLink] = useState(1);
+  useEffect(() => {
+    localStorage.setItem('activeLink', activeLink.toString());
+  }, [activeLink]);
 
   const handleLinkClick = (index) => {
     setActiveLink(index);

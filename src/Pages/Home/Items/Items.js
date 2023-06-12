@@ -2,6 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.scss";
+// import "../../../../node_modules/slick-carousel/slick/slick.css";
+// import "../../../../node_modules/slick-carousel/slick/slick-theme.css";
+
 import itemStyle from "./itemStyle.module.scss";
 import productOne from "../../../Assets/home/productOne.png";
 import productTwo from "../../../Assets/home/productTwo.png";
@@ -71,7 +74,7 @@ const Items = ({ handleLinkClick }) => {
     <div className={`container-fluid ${itemStyle.itemsContainer}`}>
       <h1>Our Products </h1>
 
-      <Slider {...itemSettings} className={itemStyle.itemSlide}>
+      <Slider {...itemSettings} className="itemSlide">
        
         <div className={itemStyle.slideDivOne}></div>
         <div className={itemStyle.slideDivTwo}></div>

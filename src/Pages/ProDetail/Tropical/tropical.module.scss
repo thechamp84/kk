@@ -6,7 +6,7 @@
 
 .leftCol {
   height: 87vh;
-  background: url("../../../Assets/ProDetail/prodetailLeft.png");
+  // background: url("../../../Assets/ProDetail/prodetailLeft.png");
   @include bg-center;
 }
 
@@ -16,38 +16,40 @@
   flex-direction: column;
   justify-content: center;
 
-  h1 {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 66px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 2px;
-    color: #000000;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  }
+  .rightColText {
+    height:60%;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 45px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 2px;
+      color: #000000;
+      text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
 
-  p {
-    margin-bottom: 8%;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    color: #000000;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    p {
+      margin-bottom: 8%;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      color: #000000;
+      text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
 .sliderPics {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
+  // display: flex !important;
+  // justify-content: center;
+  // align-items: center;
+  @include x-center;
 }
-
-
