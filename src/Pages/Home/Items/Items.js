@@ -8,7 +8,8 @@ import "slick-carousel/slick/slick-theme.scss";
 import itemStyle from "./itemStyle.module.scss";
 import productOne from "../../../Assets/home/productOne.png";
 import productTwo from "../../../Assets/home/productTwo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import ProductList from "../../../Utils/ProductList";
 
 const Items = ({ handleLinkClick }) => {
   // for the slider
@@ -70,24 +71,41 @@ const Items = ({ handleLinkClick }) => {
     ],
   };
 
+  const navigate = useNavigate();
+  const handleProductClick = (product) => {
+    const { images, heading, description } = product;
+
+    navigate("/productDetail", {
+      state: {
+        images,
+        heading,
+        description,
+      },
+    });
+  };
+
   return (
     <div className={`container-fluid ${itemStyle.itemsContainer}`}>
       <h1>Our Products </h1>
 
       <Slider {...itemSettings} className="itemSlide">
-       
-        <div className={itemStyle.slideDivOne}></div>
-        <div className={itemStyle.slideDivTwo}></div>
-        <div className={itemStyle.slideDivThree}></div>
-        <div className={itemStyle.slideDivFour}></div>
-        <div className={itemStyle.slideDivFive}></div>
-        <div className={itemStyle.slideDivSix}></div>
+        {ProductList.map((product, index) => (
+          <div
+            key={index}
+            className={itemStyle.slideDiv}
+            // style={{ backgroundImage: `url(${product.images[0]})` }}
+            onClick={() => handleProductClick(product)}
+          >
+            <img src={product.images[0]} alt="the item slide images" />
+          </div>
+        ))}
+
+      
       </Slider>
 
       <div className={itemStyle.viewAll}>
         <NavLink to={"/products"} onClick={() => handleLinkClick(3)}>
-          {" "}
-          view all{" "}
+          view all
         </NavLink>
       </div>
     </div>

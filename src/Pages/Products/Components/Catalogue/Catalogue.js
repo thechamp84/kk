@@ -1,89 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
 import catStyle from "./catStyle.module.scss";
-import catOne from "../../../../Assets/products/catOne.png";
-import catTwo from "../../../../Assets/products/catTwo.png";
-import catThree from "../../../../Assets/products/catThree.png";
-import catFour from "../../../../Assets/products/catFour.png";
-import catFive from "../../../../Assets/products/catFive.png";
-import catSix from "../../../../Assets/products/catSix.png";
-import catSeven from "../../../../Assets/products/catSeven.png";
-import catEight from "../../../../Assets/products/catEight.png";
-import catNine from "../../../../Assets/products/catNine.png";
-import catTen from "../../../../Assets/products/catTen.png";
-import catEleven from "../../../../Assets/products/catEleven.png";
-import catTwelve from "../../../../Assets/products/catTwelve.png";
-import { NavLink } from "react-router-dom";
-
-
-
-
-
-
-
-
-
-
-const catTabs = [
-  { listText: "All Products" },
-  { listText: "Topicals Packaging" },
-  { listText: "Pre Roll Tubes" },
-  { listText: "Concentrate Packaging" },
-  { listText: "Cannabis Flower Packaging" },
-  { listText: "Add - Ons" },
-];
-
-const catList = [
-  {image: catOne},
-  {image: catTwo },
-  {image: catThree},
-  {image: catFour},
-  {image: catFive},
-  {image: catSix},
-  {image: catSeven},
-  {image: catEight},
-  {image: catNine},
-  {image: catTen},
-  {image: catEleven},
-  {image: catTwelve},
-]
+import ProductList from "../../../../Utils/ProductList";
+import { NavLink, Navigate, useNavigate } from "react-router-dom";
 
 const Catalogue = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const navigate = useNavigate();
+  const handleProductClick = (product) => {
+    const { images, heading, description } = product;
 
-  const handleTabClick = (index) => {
-    setActiveTab(index);
+    navigate("/productDetail", {
+      state: {
+        images,
+        heading,
+        description,
+      },
+    });
   };
 
   return (
-    <div className={catStyle.catContainer}>
-    {/* <div className={catStyle.listBox}>
-      <ul className={catStyle.titleList}>
-        {catTabs.map((tab, index) => (
-          <li
-            key={index}
-            className={
-              index === activeTab ? catStyle.activeTabStyle : catStyle.inactiveTabStyle
-            }
-            onClick={() => handleTabClick(index)}
-          >
-            {tab.listText}
-          </li>
-        ))}
-      </ul>
-      </div> */}
-      
-      
-
-
+    <div id="catalogue" className={catStyle.catContainer}>
       <div className="row">
-        {catList.map((cat,index) => (
-          <div key={index} className={`col-6 col-sm-6 col-md-3 col-lg-3 ${catStyle.catItem}`}>
-          <NavLink to={'/productDetail'}>  <img src={cat.image} alt="the catalogue item"/></NavLink> 
+        {ProductList.map((cat, index) => (
+          <div
+            key={index}
+            className={`col-6 col-sm-6 col-md-3 col-lg-3 ${catStyle.catItem}`}
+            onClick={() => handleProductClick(cat)}
+          >
+            {/* <NavLink
+              to={"/productDetail"}
+             
+            > */}
+            <img src={cat.images[0]} alt="the catalogue item" />
+            {/* </NavLink> */}
           </div>
         ))}
       </div>
-
-
     </div>
   );
 };

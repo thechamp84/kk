@@ -17,7 +17,7 @@
   justify-content: center;
 
   .rightColText {
-    height:60%;
+    height: 60%;
     h1 {
       font-family: "Inter";
       font-style: normal;
@@ -48,8 +48,9 @@
 }
 
 .sliderPics {
-  // display: flex !important;
-  // justify-content: center;
-  // align-items: center;
   @include x-center;
+  img{
+    width:78% !important;
+    // height:20% !important;
+  }
 }

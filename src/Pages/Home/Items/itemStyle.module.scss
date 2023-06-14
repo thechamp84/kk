@@ -1,14 +1,11 @@
 @import "../../../mixins.module.scss";
 
-
 .itemsContainer {
   width: 100%;
   height: 70vh;
   padding: 0px;
   margin: 0 auto;
   text-align: center;
-
- 
 
   h1 {
     margin-bottom: 4%;
@@ -38,41 +35,42 @@
   }
 }
 
+.slideDiv {
+  height: 300px;
+  // background: url("../../../Assets/products/catOne.png");
+  @include bg-center;
 
-
-
-
-.slideDivOne {
-  height: 300px;
-  background: url("../../../Assets/products/catOne.png");
-  @include bg-center;
+  img{
+    width:95%;
+    
+  }
 }
 
-.slideDivTwo {
-  height: 300px;
-  background: url("../../../Assets/products/catTwo.png");
-  @include bg-center;
-}
-.slideDivThree {
-  height: 300px;
-  background: url("../../../Assets/products/catThree.png");
-  @include bg-center;
-}
-.slideDivFour {
-  height: 300px;
-  background: url("../../../Assets/products/catFour.png");
-  @include bg-center;
-}
-.slideDivFive {
-  height: 300px;
-  background: url("../../../Assets/products/catFive.png");
-  @include bg-center;
-}
-.slideDivSix {
-  height: 300px;
-  background: url("../../../Assets/products/catSix.png");
-  @include bg-center;
-}
+// .slideDivTwo {
+//   height: 300px;
+//   background: url("../../../Assets/products/catTwo.png");
+//   @include bg-center;
+// }
+// .slideDivThree {
+//   height: 300px;
+//   background: url("../../../Assets/products/catThree.png");
+//   @include bg-center;
+// }
+// .slideDivFour {
+//   height: 300px;
+//   background: url("../../../Assets/products/catFour.png");
+//   @include bg-center;
+// }
+// .slideDivFive {
+//   height: 300px;
+//   background: url("../../../Assets/products/catFive.png");
+//   @include bg-center;
+// }
+// .slideDivSix {
+//   height: 300px;
+//   background: url("../../../Assets/products/catSix.png");
+//   @include bg-center;
+// }
 
 @media (max-width: 576px) {
   .itemsContainer {

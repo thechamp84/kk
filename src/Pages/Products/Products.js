@@ -9,7 +9,7 @@ const Products = ({handleLinkClick}) => {
     <div>
     <Productintro/>
     <Catalogue />
-    <Learn/>
+    {/* <Learn/> */}
    
     </div>
   )
