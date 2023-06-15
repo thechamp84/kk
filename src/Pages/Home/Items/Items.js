@@ -2,9 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.scss";
-// import "../../../../node_modules/slick-carousel/slick/slick.css";
-// import "../../../../node_modules/slick-carousel/slick/slick-theme.css";
-
 import itemStyle from "./itemStyle.module.scss";
 import productOne from "../../../Assets/home/productOne.png";
 import productTwo from "../../../Assets/home/productTwo.png";
@@ -99,8 +96,6 @@ const Items = ({ handleLinkClick }) => {
             <img src={product.images[0]} alt="the item slide images" />
           </div>
         ))}
-
-      
       </Slider>
 
       <div className={itemStyle.viewAll}>

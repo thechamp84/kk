@@ -10,14 +10,15 @@ const Tropical = ({ images, heading, description }) => {
   const imgTwo = images[1];
   const imgThree = images[2];
   const imgFour = images[3];
+  const imgFive = images[4];
 
   const imageList = [
-    {image:imgOne},
-    {image:imgTwo},
-    {image:imgThree},
-    {image:imgFour}
-
-  ]
+    { image: imgOne },
+    { image: imgTwo },
+    { image: imgThree },
+    { image: imgFour },
+    {image:imgFive},
+  ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -44,7 +45,7 @@ const Tropical = ({ images, heading, description }) => {
       {
         breakpoint: 1450,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
@@ -97,18 +98,20 @@ const Tropical = ({ images, heading, description }) => {
                   ? `url(${imgThree})`
                   : currentSlide === 3
                   ? `url(${imgFour})`
-                  : null,
+                  : currentSlide === 4
+                  ? `url(${imgFive})`
+                  :null,
             }}
           ></div>
 
           <div className={`col-md-6 col-lg-6 ${tropical.rightCol}`}>
+
+          
             <div className={tropical.rightColText}>
               <h1>{heading}</h1>
               <p>{description}</p>
             </div>
 
-
-           
             <Slider {...tropicSettings} className="tropicSlide">
               <div className={tropical.sliderPics}>
                 <img src={imgOne} alt="product detail" />
@@ -122,8 +125,10 @@ const Tropical = ({ images, heading, description }) => {
               <div className={tropical.sliderPics}>
                 <img src={imgFour} alt="product detail" />
               </div>
+              <div className={tropical.sliderPics}>
+                <img src={imgFive} alt="product detail" />
+              </div>
             </Slider>
-           
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const Footer = ({ handleLinkClick }) => {
             <ul>
         
               <li>
-                <NavLink to="/kk" onClick={() => handleLinkClick(1)}>Home</NavLink>
+                <NavLink to="/" onClick={() => handleLinkClick(1)}>Home</NavLink>
               </li>
               <li>
                 <NavLink to={"/aboutUs"} onClick={() => handleLinkClick(2)}>About Us</NavLink>

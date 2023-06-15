@@ -15,11 +15,11 @@
   // ul {
   //   @include x-center;
   // }
-  .footListRow{
-    width:90%;
+  .footListRow {
+    width: 90%;
   }
 
-  .listCol{
+  .listCol {
     @include x-center;
   }
 
@@ -29,6 +29,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
+
     line-height: 22px;
 
     color: #000000;
@@ -67,32 +68,32 @@
   color: #868686;
 }
 
-
 // for mobile portraits
-@media (max-width:576px){
-  .footerContainer{
+@media (max-width: 576px) {
+  .footerContainer {
     padding: 6% 7% 10% 7%;
   }
-  .footColOne{
+  .footColOne {
     @include x-center;
     margin-bottom: 6%;
-  
   }
-  .footColTwo{
-    .footListRow{
-      width:100%;
-      margin-bottom:6%;
+  .footColTwo {
+    .footListRow {
+      width: 100%;
+      margin-bottom: 6%;
     }
 
-  .listCol{
-    margin-bottom:4%;
+    .listCol {
+      margin-bottom: 4%;
+    }
   }
 
-  }
-
-  .footColThree{
-    .iconGroup{
-      width:48%;
+  .footColThree {
+    .iconGroup {
+      img{
+        width: 19%;
+      }
+     
     }
   }
 }

@@ -39,6 +39,7 @@
   height: 300px;
   // background: url("../../../Assets/products/catOne.png");
   @include bg-center;
+  cursor:pointer;
 
   img{
     width:95%;

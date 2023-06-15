@@ -44,4 +44,24 @@
 
 .productImage {
   @include x-center;
+  cursor: pointer;
+}
+
+// for small mobile portrait
+
+@media (max-width: 576px) {
+.otherProContainer{
+  height:70vh;
+}
+  .textLeft{
+    h1{
+      font-size: 26px;
+    }
+  }
+  .productImage {
+    img {
+      width: 100%;
+      margin-bottom: 14%;
+    }
+  }
 }

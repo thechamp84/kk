@@ -43,9 +43,9 @@ const Header = ({handleLinkClick, activeLink}) => {
       <>
         <div class={`container-fluid ${styles.headerContainer}`}>
           <nav className={`navbar navbar-expand-lg navbar-light ${styles.headerLogo}`}>
-            <a className="navbar-brand " href="#home_section">
+            <NavLink to={"/kk"} className="navbar-brand " href="#home_section">
               <img src={kkLogo} alt="brand logo" />
-            </a>
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
