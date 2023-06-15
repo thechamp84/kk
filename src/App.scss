@@ -168,7 +168,11 @@ footer {
 
 
 @media (max-width: 576px) {
-  .slick-slide {
-    padding: 0 15px;
+  
+  .tropicSlide{
+    .slick-slide {
+      padding: 0 15px;
+    }
   }
+ 
 }

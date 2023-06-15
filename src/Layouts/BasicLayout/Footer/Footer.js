@@ -63,7 +63,7 @@ const Footer = ({ handleLinkClick }) => {
                 className={`col-12 col-sm-3 col-md-3 col-lg-3 ${footer.listCol}`}
               >
                 <NavLink to="/contactUs" onClick={() => handleLinkClick(4)}>
-                  Request A Qoute
+                 Contact Us
                 </NavLink>
               </div>
             </div>

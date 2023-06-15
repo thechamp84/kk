@@ -37,6 +37,9 @@
     font-size: 16px;
     line-height: 24px;
     color: #ff3b00;
+    text-decoration-color: rgba(255, 59, 0, 0.5);
+    text-underline-offset: 20%;
+    text-decoration-thickness: 12%;
   }
 }
 
@@ -52,17 +55,16 @@
   left: 0;
 }
 
-
-@media (max-width:576px){
-  .packContainer{
-    height:100vh;
+@media (max-width: 576px) {
+  .packContainer {
+    height: 100vh;
   }
 
-  .picOne{
-    width:40%;
+  .picOne {
+    width: 40%;
   }
 
-  .picTwo{
-    width:40%;
+  .picTwo {
+    width: 40%;
   }
 }
