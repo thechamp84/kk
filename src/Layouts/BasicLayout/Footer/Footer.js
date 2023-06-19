@@ -12,7 +12,7 @@ const Footer = ({ handleLinkClick }) => {
       <footer className={`container-fluid ${footer.footerContainer}`}>
         <div className="row">
           {/* first col */}
-          <div className={`col-md-2 col-lg-2 ${footer.footColOne}`}>
+          <div className={`col-sm-2 col-md-2 col-lg-2 ${footer.footColOne}`}>
             <NavLink to="/kk" onClick={() => handleLinkClick(1)}><img src={kkLogo} alt="brand logo" /></NavLink>
           </div>
 
@@ -36,7 +36,7 @@ const Footer = ({ handleLinkClick }) => {
           </div> */}
 
           {/* second col */}
-          <div className={`col-md-8 col-lg-8 ${footer.footColTwo}`}>
+          <div className={` col-sm-8 col-md-8 col-lg-8 ${footer.footColTwo}`}>
             <div className={`row ${footer.footListRow}`}>
               <div
                 className={`col-12 col-sm-3 col-md-3 col-lg-3 ${footer.listCol}`}
@@ -70,7 +70,7 @@ const Footer = ({ handleLinkClick }) => {
           </div>
 
           {/* third col */}
-          <div className={`col-md-2 col-lg-2 ${footer.footColThree}`}>
+          <div className={`col-sm-2 col-md-2 col-lg-2 ${footer.footColThree}`}>
             <p>Follow Me On</p>
             <div className={footer.iconGroup}>
               <img src={instagram} alt="instagram logo" />

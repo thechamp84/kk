@@ -23,7 +23,7 @@ const Catalogue = () => {
         {ProductList.map((cat, index) => (
           <div
             key={index}
-            className={`col-6 col-sm-6 col-md-3 col-lg-3 ${catStyle.catItem}`}
+            className={`col-6 col-sm-3 col-md-3 col-lg-3 ${catStyle.catItem}`}
             onClick={() => handleProductClick(cat)}
           >
             {/* <NavLink

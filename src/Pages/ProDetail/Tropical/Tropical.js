@@ -87,7 +87,7 @@ const Tropical = ({ images, heading, description }) => {
       <div className={`container-fluid ${tropical.tropicalContainer}`}>
         <div className="row">
           <div
-            className={`col-md-6 col-lg-6 ${tropical.leftCol}`}
+            className={`col-sm-6 col-md-6 col-lg-6 ${tropical.leftCol}`}
             style={{
               backgroundImage:
                 currentSlide === 0
@@ -104,7 +104,7 @@ const Tropical = ({ images, heading, description }) => {
             }}
           ></div>
 
-          <div className={`col-md-6 col-lg-6 ${tropical.rightCol}`}>
+          <div className={`col-sm-6 col-md-6 col-lg-6 ${tropical.rightCol}`}>
 
           
             <div className={tropical.rightColText}>

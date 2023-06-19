@@ -46,6 +46,27 @@
   margin: 1.5% 0;
   @include x-center;
   cursor: pointer;
+
+  img{
+    width:100%;
+  }
+}
+
+
+@media (max-width:992px){
+  .catItem{
+      img{
+        width:100%;
+      }
+  }
+}
+
+@media (max-width:992px) and (orientation:landscape){
+  .catItem{
+      img{
+        width:100%;
+      }
+  }
 }
 
 

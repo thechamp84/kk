@@ -61,7 +61,7 @@ const Header = ({handleLinkClick, activeLink}) => {
             <div className={`${
           isNavCollapsed ? "collapse" : ""
         } navbar-collapse`} id="navbarTogglerDemo01">
-              <ul className="navbar-nav ms-auto">
+              <ul className="navbar-nav">
                 <li className="navbar-item">
                   <NavLink  to={'/kk'} className="nav-link" onClick={handleNavCollapse}>
                     Home

@@ -30,6 +30,7 @@ const Items = ({ handleLinkClick }) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
       {
@@ -37,6 +38,7 @@ const Items = ({ handleLinkClick }) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
 
@@ -45,6 +47,7 @@ const Items = ({ handleLinkClick }) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
 
@@ -53,6 +56,7 @@ const Items = ({ handleLinkClick }) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
 
@@ -63,6 +67,7 @@ const Items = ({ handleLinkClick }) => {
           arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
     ],
@@ -99,7 +104,7 @@ const Items = ({ handleLinkClick }) => {
       </Slider>
 
       <div className={itemStyle.viewAll}>
-        <NavLink to={"/products"} onClick={() => handleLinkClick(3)}>
+        <NavLink to={"/products"} onClick={() => { handleLinkClick(3);window.scrollTo(0, 0)}}>
           view all
         </NavLink>
       </div>

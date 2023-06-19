@@ -15,7 +15,7 @@ const logoList = [
 
 const Companies = () => {
   return (
-    <div className={companies.comapanyContainer}>
+    <div className={companies.companyContainer}>
     <h1>We help not one,but many companies</h1>
     <p>We have many more company partners all around the world</p>
 

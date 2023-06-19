@@ -52,6 +52,17 @@
   // }
 }
 
+@media (max-width: 992px) {
+  .introContainer {
+    h1 {
+      font-size: 5vw;
+    }
+    p {
+      font-size: 3vw;
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .introContainer {
     h1 {

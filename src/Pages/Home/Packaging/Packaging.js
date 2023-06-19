@@ -18,39 +18,25 @@ const Packaging = ({ handleLinkClick }) => {
         industry.{" "}
       </p>
 
-      {/* <ul>
-        <li>
-         A large distribution network
-        </li>
-        <li>
-         A large warehouse
+     
+      <ul className={packaging.packagingUl}>
+        <li>A large distribution network</li>
+        <li>A large warehouse</li>
+        <li>Quick delivery with a short TAT (turnaround time)</li>
+        <li>Client-centric approach</li>
+        <li>Ethical business practices</li>
+        <li>Environmentally friendly</li>
+        <li>Affordability</li>
+      </ul>
+     
 
-        </li>
-        <li>
-         Quick delivery with a short TAT (turnaround time) 
-
-        </li>
-        <li>
-         Client-centric approach 
-
-        </li>
-        <li>
-         Ethical business practices
-
-        </li>
-        <li>
-         Environmentally friendly 
-
-        </li>
-        <li>
-         Affordability
-
-        </li>
-        
-
-      </ul> */}
-
-      <NavLink to={"/aboutUs"} onClick={() => handleLinkClick(2)}>
+      <NavLink
+        to={"/aboutUs"}
+        onClick={() => {
+          handleLinkClick(2);
+          window.scrollTo(0, 0);
+        }}
+      >
         Learn More
       </NavLink>
 

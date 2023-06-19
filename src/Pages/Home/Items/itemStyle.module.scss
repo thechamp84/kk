@@ -42,11 +42,40 @@
   height: 300px;
   // background: url("../../../Assets/products/catOne.png");
   @include bg-center;
-  cursor:pointer;
+  cursor: pointer;
 
-  img{
-    width:95%;
-    
+  img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .itemsContainer {
+    height: auto;
+    margin-bottom:2%;
+  }
+
+  .slideDiv {
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .itemsContainer {
+    height: auto;
+    margin-bottom: 2%;
+  }
+
+  .slideDiv {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .itemsContainer {
+    padding-top: 20%;
+    height: auto;
+    padding-bottom: 20%;
   }
 }
 
@@ -75,9 +104,3 @@
 //   background: url("../../../Assets/products/catSix.png");
 //   @include bg-center;
 // }
-
-@media (max-width: 576px) {
-  .itemsContainer {
-    padding-top: 20%;
-  }
-}

@@ -1,6 +1,6 @@
 @import "../../../../mixins.module.scss";
 
-.comapanyContainer {
+.companyContainer {
   height: 70vh;
   @include y-center;
 
@@ -37,34 +37,71 @@
 }
 
 .logoContainer {
- @include x-center;
+  @include x-center;
 }
 
+@media (max-width: 992px) {
+  .companyContainer {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 10%;
 
+    h1 {
+      font-size: 33px;
+      line-height: 47px;
+    }
+  }
+
+  .logoContainer {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .companyContainer {
+    // height:70vh;
+
+    h1 {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+
+  .logoContainer {
+    img {
+      width: 100%;
+    }
+  }
+}
 
 // mobile styling
 
-@media (max-width:576px){
-  .comapanyContainer{
-     height:auto;
-     padding-top: 6%;
-     padding-bottom: 8%;
-    h1{
+@media (max-width: 576px) {
+  .companyContainer {
+    height: auto;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    h1 {
       font-size: 27px;
       line-height: 35px;
     }
 
-    p{
-      margin-top:0;
+    p {
+      margin-top: 0;
       font-size: 15px;
       line-height: 27px;
-      width:80%;
+      width: 80%;
     }
   }
 
-  .logoContainer{
-    margin-bottom:10%;
+  .logoContainer {
+    
+    margin-bottom: 10%;
+
+    img{
+      width:unset;
+    }
   }
-
-
 }
