@@ -114,19 +114,19 @@ const Tropical = ({ images, heading, description }) => {
 
             <Slider {...tropicSettings} className="tropicSlide">
               <div className={tropical.sliderPics}>
-                <img src={imgOne} alt="product detail" />
+                <img src={imgOne} alt="product detail" onClick={() => setCurrentSlide(0)}/>
               </div>
               <div className={tropical.sliderPics}>
-                <img src={imgTwo} alt="product detail" />
+                <img src={imgTwo} alt="product detail" onClick={() => setCurrentSlide(1)}/>
               </div>
               <div className={tropical.sliderPics}>
-                <img src={imgThree} alt="product detail" />
+                <img src={imgThree} alt="product detail" onClick={() => setCurrentSlide(2)}/>
               </div>
               <div className={tropical.sliderPics}>
-                <img src={imgFour} alt="product detail" />
+                <img src={imgFour} alt="product detail" onClick={() => setCurrentSlide(3)}/>
               </div>
               <div className={tropical.sliderPics}>
-                <img src={imgFive} alt="product detail" />
+                <img src={imgFive} alt="product detail" onClick={() => setCurrentSlide(4)}/>
               </div>
             </Slider>
           </div>
