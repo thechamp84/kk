@@ -1,0 +1,241 @@
+@import "../../mixins.module.scss";
+
+.contactContainer {
+  position: relative;
+  height: 100vh;
+
+  .bgContainer {
+    background: url("../../Assets/contactUs/contactPic.png");
+    background-size: 100% 60%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100% !important;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  display: flex;
+
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 66px;
+    letter-spacing: 2px;
+    margin-bottom: 4%;
+  }
+
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3%;
+  }
+}
+
+.formContainer {
+  position: absolute;
+  width: 58%;
+  top: 25%;
+  left: 21.5%;
+  @include y-center;
+
+  // the form styling begins
+
+  label {
+    margin-bottom: 2%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #525451;
+  }
+
+  .inputColumns {
+    margin-bottom: 3%;
+  }
+
+  .formFields {
+    padding-left: 3%;
+    border: 1px solid #c4c4c4;
+    width: 100%;
+    height: 75%;
+
+    ::placeholder {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      display: flex;
+      align-items: center;
+      color: #969798;
+    }
+  }
+
+  button {
+    padding: 2% 3.5%;
+    border: none;
+    background: #ed3237;
+    box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom:0;
+    }
+  }
+}
+
+.textField {
+  margin-bottom: 3%;
+  textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #e3e3e3;
+  }
+
+  textarea::placeholder {
+    padding-top: 1%;
+    padding-left: 1%;
+  }
+
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4f5154;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+  }
+}
+
+// mobile landscape styling begins
+
+@media (max-width: 992px) and (max-height: 420px) and (orientation: landscape) {
+  .contactContainer {
+    height: 150vh;
+  }
+
+  .formContainer {
+    top: 12%;
+  }
+}
+
+@media (max-width: 992px) and (max-height: 380px) and (orientation: landscape) {
+  .contactContainer {
+    height: 160vh;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 750px) and (max-height: 320px) and (orientation: landscape) {
+  .contactContainer {
+    height: 250vh;
+  }
+}
+
+@media (max-width: 670px) and (max-height: 400px) and (orientation: landscape) {
+  .contactContainer {
+    height: 198vh;
+  }
+
+  .formContainer {
+    top: 8%;
+  }
+}
+
+// mobile landscape styilng ends
+
+// tab styling begins
+@media (max-width: 992px) and (min-height: 1000px) and (orientation: portrait) {
+  .contactContainer {
+    height: 85vh;
+
+    img{
+      position:absolute;
+      bottom:0;
+    }
+  }
+}
+
+// mobile portrait styling begins
+@media (max-width: 576px) {
+  .contactContainer {
+    .bgContainer {
+      width: 100%;
+      background-size: 100% 54%;
+      position: relative;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 26px;
+      text-align: center;
+    }
+  }
+
+  .formContainer {
+    width: 80%;
+    top: 14%;
+    left: 10.5%;
+
+    .inputColumns {
+      margin-bottom: 8%;
+    }
+  }
+
+  .textField {
+    p {
+      text-align: left;
+      font-size: 14px !important;
+      line-height: 22px !important;
+    }
+  }
+}
+
+@media (max-width: 576px) and (max-height: 750px) {
+  .contactContainer {
+    h1 {
+      font-size: 35px;
+    }
+  }
+
+  .formContainer {
+    top: 6%;
+  }
+}
+
+@media (max-width: 576px) and (max-height: 670px) {
+  .contactContainer {
+    height: 115vh;
+  }
+}

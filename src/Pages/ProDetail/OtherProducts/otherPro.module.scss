@@ -1,0 +1,99 @@
+@import "../../../mixins.module.scss";
+
+.otherProContainer {
+  height: 100vh;
+  padding-inline: 7%;
+  @include y-center;
+}
+
+.textContainer {
+  margin-bottom: 4%;
+}
+
+.textLeft {
+  display: flex;
+  align-items: center;
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 0;
+  }
+}
+
+.textRight {
+  @include x-end;
+  a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ff3b00;
+    text-decoration-color: rgba(255, 59, 0, 0.5);
+    text-underline-offset: 20%;
+    text-decoration-thickness: 12%;
+    cursor: pointer;
+  }
+}
+
+.productImage {
+  @include x-center;
+  cursor: pointer;
+  img{
+    height:100%;
+    width:100%;
+  }
+}
+
+@media (max-width:992px){
+  .otherProContainer{
+    // height:auto;
+    max-height:33vh;
+  }
+}
+
+@media (max-width:992px) and (orientation:landscape){
+  .otherProContainer{
+    height:auto;
+    padding-top:3%;
+    padding-bottom:3%;
+  }
+
+ 
+}
+
+// for small mobile portrait
+
+@media (max-width: 576px) {
+.otherProContainer{
+  height:70vh;
+  max-height:unset;
+}
+  .textLeft{
+    h1{
+      // font-size: 26px;
+      font-size: 6.5vw;
+    }
+  }
+
+  .textRight{
+    a{
+      font-size:3.9vw;
+    }
+  }
+  .productImage {
+    img {
+      width: 100%;
+      margin-bottom: 14%;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../../../mixins.module.scss";
+
+.catContainer {
+  padding: 7%;
+}
+
+.listBox {
+  margin-bottom: 3%;
+}
+
+.titleList {
+  @include x-sa;
+}
+
+.activeTabStyle {
+  padding: 1%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  border: 1px solid #ed3237;
+  color: #ed3237;
+  white-space: nowrap;
+}
+
+.inactiveTabStyle {
+  padding: 1%;
+  border: 1px solid #d9d9d9;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #797979;
+  white-space: nowrap;
+}
+
+.catItem {
+  margin: 1.5% 0;
+  @include x-center;
+  cursor: pointer;
+
+  img{
+    height:100%;
+    width:100%;
+  }
+}
+
+
+@media (max-width:992px){
+  .catItem{
+      img{
+        width:100%;
+      }
+  }
+}
+
+@media (max-width:992px) and (orientation:landscape){
+  .catItem{
+      img{
+        width:100%;
+      }
+  }
+}
+
+
+@media (max-width:576px){
+  .catItem{
+   margin:2% 0;
+    img{
+      width:100%;
+    }
+  }
+}

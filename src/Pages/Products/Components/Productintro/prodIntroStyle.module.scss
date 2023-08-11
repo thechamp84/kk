@@ -1,0 +1,86 @@
+@import "../../../../mixins.module.scss";
+
+.prodIntroContainer {
+  height: 70vh;
+  // background: url("../../../../Assets/home/introPic.png");
+  background: url("../../../../Assets/home/updated//homeProSix.jpg");
+
+  @include bg-center;
+  @include y-center;
+  position: relative;
+  z-index: -1;
+
+  img {
+    width: 100%;
+  }
+  
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 66px;
+    letter-spacing: 2px;
+    color: #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+  }
+
+  p {
+    width: 70%;
+    z-index: 3;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+  }
+}
+
+
+@media (max-width:992px){
+  .prodIntroContainer{
+    height:auto;
+    padding-top:3%;
+    
+  }
+}
+
+// mobile style
+
+@media (max-width: 576px) {
+  .prodIntroContainer {
+    height: 100vh;
+
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 66px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    p {
+      width: 88%;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

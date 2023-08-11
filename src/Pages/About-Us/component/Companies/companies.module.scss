@@ -1,0 +1,107 @@
+@import "../../../../mixins.module.scss";
+
+.companyContainer {
+  height: 70vh;
+  @include y-center;
+
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+  }
+
+  p {
+    margin-top: 1%;
+    margin-bottom: 6%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #656565;
+  }
+}
+
+.logosContainer {
+  width: 85%;
+}
+
+.logoRow {
+  @include x-sb;
+}
+
+.logoContainer {
+  @include x-center;
+}
+
+@media (max-width: 992px) {
+  .companyContainer {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 10%;
+
+    h1 {
+      font-size: 33px;
+      line-height: 47px;
+    }
+  }
+
+  .logoContainer {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .companyContainer {
+    // height:70vh;
+
+    h1 {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+
+  .logoContainer {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// mobile styling
+
+@media (max-width: 576px) {
+  .companyContainer {
+    height: auto;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    h1 {
+      font-size: 27px;
+      line-height: 35px;
+    }
+
+    p {
+      margin-top: 0;
+      font-size: 15px;
+      line-height: 27px;
+      width: 80%;
+    }
+  }
+
+  .logoContainer {
+    
+    margin-bottom: 10%;
+
+    img{
+      width:unset;
+    }
+  }
+}
