@@ -1,0 +1,132 @@
+@import "../../../mixins.module.scss";
+
+.packContainer {
+  @include y-center;
+  height: 70vh;
+  background: #fefbfb;
+  position: relative;
+  padding-inline:20%;
+
+   .packagingUl{
+    align-self: flex-start;
+   }
+
+  .packagingUl li{
+    display:list-item;
+    text-align: unset;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(29, 31, 46, 0.7);
+  }
+
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #1d1f2e;
+    text-shadow: 0px 0px 1px rgba(9, 3, 3, 0.53);
+    margin-bottom: 2%;
+    text-align: center !important;
+  }
+
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(29, 31, 46, 0.7);
+    // width: 62%;
+    margin-bottom: 1.5%;
+    text-align: justify;
+  }
+
+  a {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ff3b00;
+    text-decoration-color: rgba(255, 59, 0, 0.5);
+    text-underline-offset: 20%;
+    text-decoration-thickness: 12%;
+  }
+}
+
+.picOne {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.picTwo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .packContainer {
+    height: 165vh;
+  }
+
+  .picOne {
+    width: 16%;
+  }
+
+  .picTwo {
+    width: 16%;
+  }
+}
+
+@media (max-width:770px) and (orientation:portrait){
+  .picOne{
+      width:20%;
+  }
+
+  .picTwo{
+      width:20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .packContainer {
+    height: 100vh;
+    padding-inline:7%;
+  }
+
+  .picOne {
+    width: 35%;
+  }
+
+  .picTwo {
+    width: 35%;
+  }
+}
+
+@media (max-width: 392px) {
+  .picOne {
+    width: 22%;
+  }
+
+  .picTwo {
+    width: 22%;
+  }
+}
+
+@media (max-width: 380px) {
+  .picOne {
+    width: 22%;
+  }
+
+  .picTwo {
+    width: 22%;
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../../mixins.module.scss";
+
+.footerContainer {
+  background: #fff7f7;
+  padding: 2% 7%;
+}
+
+.footColOne {
+  @include x-start;
+}
+
+.footColTwo {
+  @include x-center;
+
+  // ul {
+  //   @include x-center;
+  // }
+  .footListRow {
+    width: 90%;
+  }
+
+  .listCol {
+    @include x-center;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 22px;
+
+    color: #000000;
+  }
+}
+
+.footColThree {
+  @include y-center;
+
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .iconGroup {
+    width: 62%;
+    @include x-sb;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .footColTwo {
+    .footListRow {
+      width: 100%;
+    }
+
+    a {
+      font-size: 1.9vw;
+    }
+  }
+
+  .footColThree {
+    p {
+      font-size: 14px;
+      margin-bottom: 4%;
+    }
+
+    .iconGroup {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footColThree {
+    p {
+      font-size: 1.7vw;
+    }
+  }
+}
+
+// for mobile portraits
+@media (max-width: 576px) and (orientation: portrait) {
+  .footerContainer {
+    padding: 6% 7% 10% 7%;
+  }
+  .footColOne {
+    @include x-center;
+    margin-bottom: 6%;
+  }
+  .footColTwo {
+    .footListRow {
+      width: 100%;
+      margin-bottom: 6%;
+    }
+    a {
+      font-size: 18px;
+    }
+    .listCol {
+      margin-bottom: 4%;
+    }
+  }
+
+  .footColThree {
+    p {
+      font-size: 18px;
+    }
+    .iconGroup {
+      width:65%;
+      img {
+        width: 19%;
+      }
+    }
+  }
+}
