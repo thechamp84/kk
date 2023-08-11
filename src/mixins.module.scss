@@ -1,0 +1,74 @@
+
+// for no padding
+@mixin nopad {
+  padding: 0 !important;
+}
+
+
+// for centerign elements on x and y axis
+@mixin x-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin x-end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@mixin x-start {
+  display: flex ;
+  justify-content: start;
+  align-items: center;
+}
+
+@mixin x-sb {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin x-sa{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin y-center {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin y-start{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: start;
+}
+
+@mixin y-end{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: end;
+}
+
+@mixin y-top{
+  display:flex;
+  flex-direction:column;
+  justify-content:start;
+  align-items: center;
+}
+
+
+
+// for background size and position
+
+@mixin bg-center{
+  background-size:cover;
+  background-position:center;
+}
